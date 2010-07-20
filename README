@@ -1,0 +1,46 @@
+###############################################
+cu3er-silverstripe-extension
+SS2.4 tested
+###############################################
+
+20 July 2010
+This is a full working version of cu3er-silverstripe-extension
+
+
+Maintainer Contact
+-----------------------------------------------
+Matt Clegg <cleggmatt (at) gmail (dot) com>
+
+With help from;http://code.google.com/p/cu3er-silverstripe-extension/
+
+
+Optional Requirements
+-----------------------------------------------
+DataobjectManager
+
+
+Installation Instructions
+-----------------------------------------------
+
+Extend your Custom Page from Cu3erPage ie;
+class CustomPage extends Cu3erPage {
+
+Extend your CustomPage Controller as normal ie;
+class CustomPage_Controller extends Page_Controller {
+
+Include the function;
+public function FlashCu3er(){
+ return new Cu3erPage_Holder($this->ID);
+}
+
+Put $FlashCu3er in your template
+
+
+Known issues
+-----------------------------------------------
+
+
+To Do
+-----------------------------------------------
+
+Make into a widget?
